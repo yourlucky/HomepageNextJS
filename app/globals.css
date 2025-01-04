@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* 전역 스타일 */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* 전역 폰트 */
+  font-size: 17px; /* 기본 폰트 크기 */
+  font-weight: 400;
+  background-color: #f9f9f9; /* 배경색 */
+}
+
+.button {
+  font-size: 14px;
+  padding: 5px 5px;
+  border-radius: 15px;
+  font-weight: semibold;
+  color: white;
+  user-select: none;
+  cursor: pointer;
+  background: #0050ff;
+  width: 120px;
+}
+
+.button-prj {
+  color: black;
+  background: white;
+  border: 2px solid black;
+}
