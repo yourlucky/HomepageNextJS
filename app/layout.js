@@ -19,9 +19,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en' className={inter.variable} spellCheck="false">
+    <html lang='en' className={inter.variable}>
       <head />
-      <body>
+      <body suppressHydrationWarning={true}>
         <div className='bg-white sm:px-6 lg:px-8 py-5'>
           <div className='flex justify-between items-end px-1 sm:px-6 h-24 bg-white text-black'>
             <div className='text-base mr-1 sm:mr-6 lg:mr-8'>
