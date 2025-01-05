@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
 import React, { useState, useEffect, useCallback } from 'react';
 import ResumeComponent from './ResumeComponent';
 
-// 4번 코드 초기버전 
+// 4번 코드 초기버전
 // 주요 변경 내용 state에 fetch데이터를 넣으니 fetch전 길이 check로 loading에서 못나옴
 // useCallbac은 동기로 처리하여 fetch한 eduData가 아닌 transformed된 값을 넣음
 //--> 이렇게 하니 되긴하나 계속 무한루프마냥 데이터를 받음(컴퓨터 과부하)
@@ -38,8 +38,8 @@ export default function ResumeState() {
   }, []); //[] 초기에만 Loading 특별히 변경 기준되는 모니터링 state가 없음.
 
   useEffect(() => {
-    fetchData(); 
-  //}, [transformedExpData,transformedEduData ]); // transformedEduData,transformedExpData 상태를 모니터링
+    fetchData();
+    //}, [transformedExpData,transformedEduData ]); // transformedEduData,transformedExpData 상태를 모니터링
   }, [fetchData]); // fetchData가 변경 모니터링
 
   // transformedEduData와 transformedExpData가 비어 있으면 로딩 상태 표시

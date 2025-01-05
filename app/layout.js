@@ -5,11 +5,10 @@ import ProjectsDropdown from './ProjectsDropdown';
 import { Inter } from 'next/font/google';
 import RecoilProvider from './RecoilProvider';
 
-
 // Inter 폰트 설정
 const inter = Inter({
   subsets: ['latin'],
-  weight: ['100','200','300','400', '700'], // 필요한 폰트 굵기
+  weight: ['100', '200', '300', '400', '700'], // 필요한 폰트 굵기
   variable: '--font-inter', // CSS 변수로 설정
 });
 
@@ -24,34 +23,34 @@ export default function RootLayout({ children }) {
     <html lang='en' className={inter.variable}>
       <head />
       <body suppressHydrationWarning={true}>
-      <RecoilProvider>
-        <div className='bg-white sm:px-6 lg:px-8 py-5'>
-          <div className='flex justify-between items-end px-1 sm:px-6 h-24 bg-white text-black'>
-            <div className='text-base mr-1 sm:mr-6 lg:mr-8'>
-              <Link
-                href='/'
-                className='inline-flex items-center font-extrabold whitespace-nowrap text-plus sm:text-xl pb-10'
-              >
-                <span className='inline-block w-4 h-4 bg-[blue] ml-1 mr-2.5 sm:pb-2'></span>
-                YoonChae
-              </Link>
-              <span className='hidden sm:inline sm:whitespace-nowrap pb-2'>
-                / Software Engineer
-              </span>
-            </div>
-            <div className='flex gap-3 xs:gap-4 sm:gap-8 lg:gap-10  text-sm pb-2'>
-              <Link href='/' className='hover:text-[#0050ff]'>
-                ABOUT ME
-              </Link>
-              <Link href='/resume' className='hover:text-[#0050ff]'>
-                RESUME
-              </Link>
-              <ProjectsDropdown />
+        <RecoilProvider>
+          <div className='bg-white sm:px-6 lg:px-8 py-5'>
+            <div className='flex justify-between items-end px-1 sm:px-6 h-24 bg-white text-black'>
+              <div className='text-base mr-1 sm:mr-6 lg:mr-8'>
+                <Link
+                  href='/'
+                  className='inline-flex items-center font-extrabold whitespace-nowrap text-plus sm:text-xl pb-10'
+                >
+                  <span className='inline-block w-4 h-4 bg-[blue] ml-1 mr-2.5 sm:pb-2'></span>
+                  YoonChae
+                </Link>
+                <span className='hidden sm:inline sm:whitespace-nowrap pb-2'>
+                  / Software Engineer
+                </span>
+              </div>
+              <div className='flex gap-3 xs:gap-4 sm:gap-8 lg:gap-10  text-sm pb-2'>
+                <Link href='/' className='hover:text-[#0050ff]'>
+                  ABOUT ME
+                </Link>
+                <Link href='/resume' className='hover:text-[#0050ff]'>
+                  RESUME
+                </Link>
+                <ProjectsDropdown />
+              </div>
             </div>
           </div>
-        </div>
-            {children}
-            </RecoilProvider>
+          {children}
+        </RecoilProvider>
 
         <div className='flex justify-between items-end px-4 sm:px-6 pb-5 h-24 bg-white text-black'>
           {/* xs 이하에서 숨기기 */}

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* 전역 스타일 */
 body {
   margin: 0;

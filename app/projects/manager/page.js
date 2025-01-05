@@ -156,8 +156,7 @@ export default function Manger() {
       {/* 가운데 콘텐츠 */}
       <div className='w-full max-w-[800px] mx-auto'>
         <div className='flex items-center justify-center font-bold text-xxl pt-12 pb-10'>
-          <div className='font-xxl w-5 h-5 bg-[blue] mr-3'></div>Product
-          Manager
+          <div className='font-xxl w-5 h-5 bg-[blue] mr-3'></div>Product Manager
         </div>
         <div className='font-plus text-center p-4 pb-10'>
           As a full-stack engineer, I've had the opportunity to work on a

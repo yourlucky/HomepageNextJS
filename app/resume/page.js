@@ -58,7 +58,7 @@ export default function Resume() {
   return (
     <div className='w-full max-w-[800px] mx-auto'>
       <div className=''>
-          <VisitTracker />
+        <VisitTracker />
         <div className='flex items-center justify-center font-bold text-xxl pt-12 pb-10'>
           <div className='w-5 h-5 bg-[blue] mr-3'></div>Resume
         </div>

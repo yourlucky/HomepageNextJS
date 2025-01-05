@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { useState, useEffect, useMemo } from 'react';
 import ResumeComponent from './ResumeComponent';
@@ -24,7 +24,6 @@ export default function ResumeState() {
 
     fetchData();
   }, []); //[] 초기에만 Loading 특별히 변경 기준되는 모니터링 state가 없음.
-
 
   //eduData를 메모, Exp변경 시 별도 연산없이 저장된 eduData 활용
   const transformedEduData = useMemo(
@@ -52,5 +51,10 @@ export default function ResumeState() {
     return <p>Loading...</p>;
   }
 
-  return <ResumeComponent experiences={transformedExpData} education={transformedEduData} />;
+  return (
+    <ResumeComponent
+      experiences={transformedExpData}
+      education={transformedEduData}
+    />
+  );
 }

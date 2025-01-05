@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { useState, useEffect } from 'react';
 import ResumeComponent from './ResumeComponent';
@@ -20,7 +20,7 @@ export default function ResumeState() {
       try {
         const [resEdu, resExp] = await Promise.all([
           fetch('/api/education'),
-          fetch('/api/experiences')
+          fetch('/api/experiences'),
         ]);
 
         const resultEdu = await resEdu.json();
@@ -45,11 +45,11 @@ export default function ResumeState() {
             Array.isArray(item) ? item : Object.values(item)
           );
 
-    setTransformedEduData(transformData(eduData));// eduData 변환 후 set을 통한 업데이트
-    setTransformedExpData(transformData(expData));// expData 변환 후 set을 통한 업데이트
+    setTransformedEduData(transformData(eduData)); // eduData 변환 후 set을 통한 업데이트
+    setTransformedExpData(transformData(expData)); // expData 변환 후 set을 통한 업데이트
   }, [eduData, expData]);
 
-  //edu,exp모두 transfrom 되지 않으면 loading 표시 
+  //edu,exp모두 transfrom 되지 않으면 loading 표시
   if (!transformedEduData.length || !transformedExpData.length) {
     return <p>Loading...</p>;
   }

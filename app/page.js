@@ -11,9 +11,9 @@ export default function Home() {
     <section className='flex flex-col sm:flex-row min-h-screen relative'>
       {/* 좌측 베이지색 영역 (모바일에서는 숨김) */}
       <div className='hidden sm:flex w-1/3 flex-col bg-[#E6DACE] relative'>
-           <VisitTracker />
+        <VisitTracker />
       </div>
-      
+
       {/* 컨텐츠 영역 베이지색 외 전체 */}
       <div className='flex-1 flex flex-col gap-8 bg-white p-8 sm:p-20 relative'>
         {/* 프로필 카드 */}
@@ -28,7 +28,7 @@ export default function Home() {
                 alt='my picture'
                 className='object-cover'
                 fill
-                sizes="(max-width: 640px) 100vw, 300px" 
+                sizes='(max-width: 640px) 100vw, 300px'
               />
             </div>
             <div className='text-[30px] font-bold pt-5 pb-3'>Yoon Na</div>
