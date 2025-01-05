@@ -110,7 +110,7 @@ export default function AiProject() {
       {/* 가운데 콘텐츠 */}
       <div className='w-full max-w-[800px] mx-auto'>
         <div className='flex items-center justify-center font-bold text-xxl pt-12 pb-10'>
-          <bbox className='font-xxl w-5 h-5 bg-[blue] mr-3'></bbox>Implementing
+          <div className='font-xxl w-5 h-5 bg-[blue] mr-3'></div>Implementing
           with AI
         </div>
         <div className='font-plus text-center p-4 pb-10'>

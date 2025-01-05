@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import ProjectsDropdown from './ProjectsDropdown';
 import { Inter } from 'next/font/google';
+import RecoilProvider from './RecoilProvider';
+
 
 // Inter 폰트 설정
 const inter = Inter({
@@ -22,6 +24,7 @@ export default function RootLayout({ children }) {
     <html lang='en' className={inter.variable}>
       <head />
       <body suppressHydrationWarning={true}>
+      <RecoilProvider>
         <div className='bg-white sm:px-6 lg:px-8 py-5'>
           <div className='flex justify-between items-end px-1 sm:px-6 h-24 bg-white text-black'>
             <div className='text-base mr-1 sm:mr-6 lg:mr-8'>
@@ -47,7 +50,8 @@ export default function RootLayout({ children }) {
             </div>
           </div>
         </div>
-        {children}
+            {children}
+            </RecoilProvider>
 
         <div className='flex justify-between items-end px-4 sm:px-6 pb-5 h-24 bg-white text-black'>
           {/* xs 이하에서 숨기기 */}

@@ -1,10 +1,9 @@
 import React from "react";
-
+import {useRecoilState} from "recoil";
+import { counterState } from "../state/atoms";
 
 const VisitTracker = () => {
-
-    // TODO: create a global state so that this component can be shared in multiple pages
-    const [counter, setCounter] = React.useState(0);
+    const [counter, setCounter] = useRecoilState(counterState);
 
     const handleClick = () => {
         setCounter((prevCounter) => {

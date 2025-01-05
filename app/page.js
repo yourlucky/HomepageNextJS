@@ -10,9 +10,10 @@ export default function Home() {
   return (
     <section className='flex flex-col sm:flex-row min-h-screen relative'>
       {/* 좌측 베이지색 영역 (모바일에서는 숨김) */}
-      <div className='hidden sm:flex w-1/3 flex-col bg-[#E6DACE] relative'></div>
-      <VisitTracker />
-
+      <div className='hidden sm:flex w-1/3 flex-col bg-[#E6DACE] relative'>
+           <VisitTracker />
+      </div>
+      
       {/* 컨텐츠 영역 베이지색 외 전체 */}
       <div className='flex-1 flex flex-col gap-8 bg-white p-8 sm:p-20 relative'>
         {/* 프로필 카드 */}

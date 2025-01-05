@@ -1,10 +1,12 @@
+'use client';
+
 import './resume.css';
 import Link from 'next/link';
 import ResumeBox from './ResumeBox';
 import EducationBox from './EducationBox';
+import VisitTracker from '../_component/VisitTracker';
 
 export default function Resume() {
-  // TODO: Fetch experience data via api
   const experiences = [
     {
       period: '2023 - Present',
@@ -56,8 +58,9 @@ export default function Resume() {
   return (
     <div className='w-full max-w-[800px] mx-auto'>
       <div className=''>
+          <VisitTracker />
         <div className='flex items-center justify-center font-bold text-xxl pt-12 pb-10'>
-          <bbox className='w-5 h-5 bg-[blue] mr-3'></bbox>Resume
+          <div className='w-5 h-5 bg-[blue] mr-3'></div>Resume
         </div>
         <div className='flex items-center justify-between mx-auto px-2 pb-8 text-xl font-bold'>
           <div className='flex-1'>Work Experience</div>
@@ -85,26 +88,26 @@ export default function Resume() {
           <div>
             <div className='text-xl font-bold py-3'>Technical Skills</div>
             <div className='flex items-center p-2'>
-              <bbox className='w-2 h-2 bg-[blue] mr-3 flex-shrink-0'></bbox>
+              <div className='w-2 h-2 bg-[blue] mr-3 flex-shrink-0'></div>
               <div className='text-base'>
                 Languages: Python, Java, C/C++, CABSL, JavaScript, R, MATLAB
               </div>
             </div>
             <div className='flex items-center p-2'>
-              <bbox className='w-2 h-2 bg-[blue] mr-3 flex-shrink-0'></bbox>
+              <div className='w-2 h-2 bg-[blue] mr-3 flex-shrink-0'></div>
               <div className='text-base'>
                 Frameworks/Libraries: NodeJS, Flask, Django, PyTorch,
                 Stable-baseline, OpenCV, Mujoco, Scikit, Pandas
               </div>
             </div>
             <div className='flex items-center p-2'>
-              <bbox className='w-2 h-2 bg-[blue] mr-3 flex-shrink-0'></bbox>
+              <div className='w-2 h-2 bg-[blue] mr-3 flex-shrink-0'></div>
               <div className='text-base'>
                 Databases: MySQL, MongoDB, VectorDB
               </div>
             </div>
             <div className='flex items-center p-2'>
-              <bbox className='w-2 h-2 bg-[blue] mr-3 flex-shrink-0'></bbox>
+              <div className='w-2 h-2 bg-[blue] mr-3 flex-shrink-0'></div>
               <div className='text-base'>
                 Others: Operation Research, Traditional Statistics,
                 Reinforcement Learning, Linux, Raspberry-pi, Arduino, GitHub
