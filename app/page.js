@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { RiContactsFill } from "react-icons/ri";
+import { RiContactsFill } from 'react-icons/ri';
 import Image from 'next/image';
 import VisitTracker from './_component/VisitTracker';
 
@@ -62,9 +62,8 @@ export default function Home() {
               rel='noopener noreferrer'
               className='hover:text-gray-700'
             >
-            <RiContactsFill size={20} />
+              <RiContactsFill size={20} />
             </a>
-
           </div>
         </div>
 
