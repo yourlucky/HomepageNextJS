@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <section className='flex flex-col sm:flex-row min-h-screen relative'>
       {/* 좌측 베이지색 영역 (모바일에서는 숨김) */}
-      <div className='hidden sm:flex w-1/3 flex-col bg-[#E6DACE] relative'>
+      <div className='hidden sm:flex w-1/3 flex-col bg-beige relative'>
         <VisitTracker />
       </div>
 
@@ -19,7 +19,7 @@ export default function Home() {
       <div className='flex-1 flex flex-col gap-8 bg-white p-8 sm:p-20 relative'>
         {/* 프로필 카드 */}
         <div
-          className='shadow-2xl bg-[#F4ECE6] flex flex-col items-center mx-auto sm:absolute sm:left-[0%] sm:top-[11%] sm:translate-x-[-90%]'
+          className='bg-brightbeige flex flex-col items-center mx-auto sm:absolute sm:left-[0%] sm:top-[11%] sm:translate-x-[-90%]'
           style={{ width: 'min(300px, 40%)', minWidth: '300px' }}
         >
           <div className='h-[90%] flex flex-col items-center'>
@@ -32,9 +32,9 @@ export default function Home() {
                 sizes='(max-width: 640px) 100vw, 300px'
               />
             </div>
-            <div className='text-[30px] font-bold pt-5 pb-3'>Yoon Na</div>
+            <div className='text-xxl font-bold pt-5 pb-3'>Yoon Na</div>
             <div className='w-12 h-0.5 bg-[blue]'></div>
-            <div className='text-[17px] font-light py-8'>
+            <div className='text-plus font-light py-8'>
               FULL-STACK ENGINEER
             </div>
           </div>
@@ -88,10 +88,10 @@ export default function Home() {
 
           {/* 나머지 글씨 */}
           <div className='flex flex-col gap-4'>
-            <div className='text-[25px] font-bold'>
+            <div className='text-xl font-bold'>
               From Ideas to Implementation
             </div>
-            <div className='text-[20px]'>: My Engineering Journey</div>
+            <div className='text-lg'>: My Engineering Journey</div>
             <p>
               I’m a full-stack engineer based in California. My journey in
               technology began at Hyundai, where I spent three years as an IT

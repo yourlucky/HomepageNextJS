@@ -14,6 +14,8 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        beige: '#e6dace',
+        brightbeige: '#F4ECE6',
       },
     },
     fontSize: {

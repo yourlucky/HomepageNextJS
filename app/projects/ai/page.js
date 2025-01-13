@@ -1,4 +1,3 @@
-import './ai.css';
 import ProjectBox from './ProjectBox';
 import ProjectUBox from './ProjectUBox';
 
@@ -97,9 +96,9 @@ export default function AiProject() {
   ];
 
   return (
-    <div className='flex'>
+    <div className='flex bg-beige'>
       {/* 좌측 버튼 */}
-      <div className='hidden sm:flex flex-col w-1/4 bg-[#E6DACE] pt-12 gap-4 items-center'>
+      <div className='hidden sm:flex flex-col w-1/4 bg-beige pt-12 gap-4 items-center'>
         <Link href='/projects/manager'>
           <button className='round' role='button'>
             &lt;
@@ -137,7 +136,7 @@ export default function AiProject() {
       </div>
 
       {/* 우측 버튼 */}
-      <div className='hidden sm:flex flex-col w-1/4 bg-[#E6DACE] pt-12 gap-4 items-center'>
+      <div className='hidden sm:flex flex-col w-1/4 bg-beige pt-12 gap-4 items-center'>
         <Link href='/projects/full'>
           <button className='round' role='button'>
             &gt;
