@@ -10,7 +10,6 @@ body {
   font-weight: 400;
   background-color: #f9f9f9; /* 배경색 */
 }
-
 .button {
   font-size: 14px;
   padding: 5px 5px;
@@ -23,8 +22,9 @@ body {
   width: 120px;
 }
 
+/* 
 .button-prj {
   color: black;
   background: white;
   border: 2px solid black;
-}
+} */

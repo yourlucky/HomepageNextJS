@@ -36,6 +36,9 @@ module.exports = {
       '3/5': '60%',
       '2/5': '40%',
     },
+    boxShadow: {
+      'custom-dark': '0 2px 4px darkslategray',
+    },
   },
   plugins: [],
 };

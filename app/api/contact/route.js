@@ -2,10 +2,7 @@ import { connectDB } from '@/util/database';
 
 export async function POST(request) {
   try {
-    //pplication/x-www-form-urlencoded
-    const bodyText = await request.text();
-    const params = new URLSearchParams(bodyText);
-    const body = Object.fromEntries(params.entries());
+    const body = await request.json();
 
     const db = (await connectDB).db('forum');
     const result = await db.collection('contact').insertOne(body);

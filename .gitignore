@@ -17,6 +17,7 @@ cheat_sheet.txt
 
 # production
 /build
+/test
 
 # misc
 .DS_Store
