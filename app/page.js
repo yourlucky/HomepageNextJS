@@ -34,9 +34,7 @@ export default function Home() {
             </div>
             <div className='text-xxl font-bold pt-5 pb-3'>Yoon Na</div>
             <div className='w-12 h-0.5 bg-[blue]'></div>
-            <div className='text-plus font-light py-8'>
-              FULL-STACK ENGINEER
-            </div>
+            <div className='text-plus font-light py-8'>FULL-STACK ENGINEER</div>
           </div>
           {/* 프로필 하단 아이콘 섹션 */}
           <div className='h-[10%] bg-white w-full flex justify-center items-center gap-4 py-4'>

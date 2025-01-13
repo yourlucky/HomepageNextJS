@@ -55,14 +55,24 @@ export default function Resume() {
     },
   ];
   const technicalSkills = [
-    { category: 'Languages', details: 'Python, Java, C/C++, CABSL, JavaScript, R, MATLAB' },
-    { category: 'Frameworks/Libraries', details: 'NodeJS, Flask, Django, PyTorch, Stable-baseline, OpenCV, Mujoco, Scikit, Pandas' },
+    {
+      category: 'Languages',
+      details: 'Python, Java, C/C++, CABSL, JavaScript, R, MATLAB',
+    },
+    {
+      category: 'Frameworks/Libraries',
+      details:
+        'NodeJS, Flask, Django, PyTorch, Stable-baseline, OpenCV, Mujoco, Scikit, Pandas',
+    },
     { category: 'Databases', details: 'MySQL, MongoDB, VectorDB' },
-    { category: 'Others', details: 'Operation Research, Traditional Statistics, Reinforcement Learning, Linux, Raspberry-pi, Arduino, GitHub' },
+    {
+      category: 'Others',
+      details:
+        'Operation Research, Traditional Statistics, Reinforcement Learning, Linux, Raspberry-pi, Arduino, GitHub',
+    },
   ];
   return (
-    <div className="w-full bg-beige min-h-screen">
-
+    <div className='w-full bg-beige min-h-screen'>
       <div className='max-w-[800px] mx-auto'>
         <div className=''>
           <VisitTracker />
@@ -79,7 +89,9 @@ export default function Resume() {
                 </button>
               </Link>
               <Link href='https://drive.google.com/file/d/1mSFUG2RgQpP-snvMgJF3AdWCLe6T7-XE/view'>
-                <button className='button button-rs button-rs-pdf'>PDF Download</button>
+                <button className='button button-rs button-rs-pdf'>
+                  PDF Download
+                </button>
               </Link>
             </div>
           </div>
@@ -95,9 +107,9 @@ export default function Resume() {
             <div>
               <div className='text-xl font-bold py-3'>Technical Skills</div>
               {technicalSkills.map((skill, index) => (
-                <div key={index} className="flex items-center p-2">
-                  <div className="w-2 h-2 bg-[blue] mr-3 flex-shrink-0"></div>
-                  <div className="text-base">
+                <div key={index} className='flex items-center p-2'>
+                  <div className='w-2 h-2 bg-[blue] mr-3 flex-shrink-0'></div>
+                  <div className='text-base'>
                     {skill.category}: {skill.details}
                   </div>
                 </div>
@@ -113,7 +125,7 @@ export default function Resume() {
               <EducationBox {...educationObj} />
             </div>
           ))}
-          <div className="p-5"></div>
+          <div className='p-5'></div>
         </div>
       </div>
     </div>
