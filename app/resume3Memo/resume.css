@@ -1,18 +1,18 @@
 body {
-  background-color: #e6dace;
+    background-color: #e6dace;
 }
 
 .button-rs {
-  font-size: 14px;
-  padding: 5px 5px;
-  border-radius: 5px;
-  font-weight: lighter;
-  color: #ffff;
-  user-select: none;
-  cursor: pointer;
-  background: #6e6d70;
+    font-size: 14px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-weight: lighter;
+    color: #ffff;
+    user-select: none;
+    cursor: pointer;
+    background: #6e6d70;
 }
 
 .button-rs-pdf {
-  background: #ae633f;
+    background: #ae633f;
 }

@@ -4,56 +4,56 @@
 
 /* 전역 스타일 */
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif; /* 전역 폰트 */
-  font-size: 17px; /* 기본 폰트 크기 */
-  font-weight: 400;
-  background-color: #f9f9f9; /* 배경색 */
+    margin: 0;
+    font-family: "Inter", sans-serif; /* 전역 폰트 */
+    font-size: 17px; /* 기본 폰트 크기 */
+    font-weight: 400;
+    background-color: #f9f9f9; /* 배경색 */
 }
 .button {
-  font-size: 14px;
-  padding: 5px 5px;
-  border-radius: 15px;
-  font-weight: semibold;
-  color: white;
-  user-select: none;
-  cursor: pointer;
-  background: #0050ff;
-  width: 120px;
+    font-size: 14px;
+    padding: 5px 5px;
+    border-radius: 15px;
+    font-weight: semibold;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    background: #0050ff;
+    width: 120px;
 }
 
 .button-prj {
-  color: black;
-  background: white;
-  border: 2px solid black;
+    color: black;
+    background: white;
+    border: 2px solid black;
 }
 
 .button-rs {
-  font-weight: lighter;
-  background: #6e6d70;
+    font-weight: lighter;
+    background: #6e6d70;
 }
 
 .button-rs-pdf {
-  background: #ae633f;
+    background: #ae633f;
 }
 
 button.round {
-  background-color: #be5b47;
-  color: white;
-  border: none;
-  font-size: 45px;
-  height: 100px;
-  width: 100px;
-  box-shadow: 0 2px 4px darkslategray;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.2s ease;
+    background-color: #be5b47;
+    color: white;
+    border: none;
+    font-size: 45px;
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 2px 4px darkslategray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 button.round:hover {
-  background-color: #c26754;
+    background-color: #c26754;
 }
 
 button.round:active {
-  box-shadow: 0 0 2px darkslategray;
-  transform: translateY(2px);
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
 }
