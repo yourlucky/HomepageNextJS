@@ -2,7 +2,7 @@ import React from "react";
 import {useRecoilState} from "recoil";
 import {darkState} from "../state/atoms";
 import {MdDarkMode} from "react-icons/md";
-import { FaRegSun } from "react-icons/fa";
+import {FaRegSun} from "react-icons/fa";
 
 const DarkMode = () => {
     const [dark, setDark] = useRecoilState(darkState);
