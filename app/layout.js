@@ -1,9 +1,10 @@
 import "./globals.css";
 import Link from "next/link";
-import {FaLinkedin, FaGithub} from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { Inter } from "next/font/google";
+import ThemeProvider from "./ThemeProvider";
 import ProjectsDropdown from "./ProjectsDropdown";
-import {Inter} from "next/font/google";
-import RecoilProvider from "./RecoilProvider";
+
 
 // Inter 폰트 설정
 const inter = Inter({
@@ -18,11 +19,13 @@ export const metadata = {
 };
 
 export default function RootLayout({children}) {
+
     return (
         <html lang="en" className={inter.variable}>
             <head />
             <body suppressHydrationWarning={true}>
-                <RecoilProvider>
+            <ThemeProvider>
+
                     <div className="bg-white sm:px-6 lg:px-8 py-5">
                         <div className="flex justify-between items-end px-1 sm:px-6 h-24 bg-white text-black">
                             <div className="text-base mr-1 sm:mr-6 lg:mr-8">
@@ -47,7 +50,6 @@ export default function RootLayout({children}) {
                         </div>
                     </div>
                     {children}
-                </RecoilProvider>
 
                 <div className="flex justify-between items-end px-4 sm:px-6 pb-5 h-24 bg-white text-black">
                     {/* xs 이하에서 숨기기 */}
@@ -77,6 +79,7 @@ export default function RootLayout({children}) {
                         </div>
                     </div>
                 </div>
+                </ThemeProvider>
             </body>
         </html>
     );

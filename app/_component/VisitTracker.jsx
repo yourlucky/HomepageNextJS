@@ -1,8 +1,7 @@
 import React from "react";
 import {useRecoilState} from "recoil";
 import {counterState} from "../state/atoms";
-import { MdDarkMode } from "react-icons/md";
-
+import {MdDarkMode} from "react-icons/md";
 
 const VisitTracker = () => {
     const [counter, setCounter] = useRecoilState(counterState);

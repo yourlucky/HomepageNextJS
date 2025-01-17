@@ -5,18 +5,16 @@ import Link from "next/link";
 import {FaLinkedin, FaGithub} from "react-icons/fa";
 import {RiContactsFill} from "react-icons/ri";
 import Image from "next/image";
-import VisitTracker from "./_component/VisitTracker";
 import DarkMode from "./_component/DarkMode";
-
 
 export default function Home() {
     return (
         <section className="flex flex-col sm:flex-row min-h-screen relative">
             {/* 좌측 베이지색 영역 (모바일에서는 숨김) */}
             <div className="hidden sm:flex w-1/3 flex-col bg-beige relative">
-              <div className="flex items-center p-3">
-                <span className="text-lg">Dark Mode</span> <DarkMode />
-              </div>
+                <div className="flex items-center p-3">
+                    <span className="text-lg p-2">Dark Mode </span> <DarkMode />
+                </div>
             </div>
 
             {/* 컨텐츠 영역 베이지색 외 전체 */}
