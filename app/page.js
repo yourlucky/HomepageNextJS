@@ -9,19 +9,19 @@ import DarkMode from "./_component/DarkMode";
 
 export default function Home() {
     return (
-        <section className="flex flex-col sm:flex-row min-h-screen relative">
+        <section className="flex flex-col sm:flex-row min-h-screen relative bg-background text-foreground dark:bg-background-dark dark:text-foreground-dark ">
             {/* 좌측 베이지색 영역 (모바일에서는 숨김) */}
-            <div className="hidden sm:flex w-1/3 flex-col bg-beige relative">
+            <div className="hidden sm:flex w-1/3 flex-col bg-accent-beige dark:bg-accent-charcoal relative">
                 <div className="flex items-center p-3">
                     <span className="text-lg p-2">Dark Mode </span> <DarkMode />
                 </div>
             </div>
 
             {/* 컨텐츠 영역 베이지색 외 전체 */}
-            <div className="flex-1 flex flex-col gap-8 bg-white p-8 sm:p-20 relative">
+            <div className="flex-1 flex flex-col gap-8 p-8 sm:p-20 relative">
                 {/* 프로필 카드 */}
                 <div
-                    className="bg-brightbeige flex flex-col items-center mx-auto sm:absolute sm:left-[0%] sm:top-[11%] sm:translate-x-[-90%]"
+                    className="bg-accent-brightbeige dark:bg-accent-lightgray flex flex-col items-center mx-auto sm:absolute sm:left-[0%] sm:top-[11%] sm:translate-x-[-90%]"
                     style={{width: "min(300px, 40%)", minWidth: "300px"}}
                 >
                     <div className="h-[90%] flex flex-col items-center">
@@ -35,28 +35,28 @@ export default function Home() {
                             />
                         </div>
                         <div className="text-xxl font-bold pt-5 pb-3">Yoon Na</div>
-                        <div className="w-12 h-0.5 bg-[blue]"></div>
+                        <div className="w-12 h-0.5 bg-accent-blue dark:bg-white"></div>
                         <div className="text-plus font-light py-8">FULL-STACK ENGINEER</div>
                     </div>
                     {/* 프로필 하단 아이콘 섹션 */}
-                    <div className="h-[10%] bg-white w-full flex justify-center items-center gap-4 py-4">
+                    <div className="h-[10%] bg-white dark:bg-black w-full flex justify-center items-center gap-4 py-4">
                         <a
                             href="https://www.linkedin.com/in/ycna/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hover:text-blue-600"
+                            className="hover:text-accent-blue"
                         >
-                            <FaLinkedin size={20} />
+                            <FaLinkedin size={20} color="currentColor" />
                         </a>
                         <a
                             href="https://github.com/yourlucky"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hover:text-gray-700"
+                            className="hover:text-accent-blue"
                         >
                             <FaGithub size={20} />
                         </a>
-                        <a href="/contact" target="_blank" rel="noopener noreferrer" className="hover:text-gray-700">
+                        <a href="/contact" target="_blank" rel="noopener noreferrer" className="hover:text-accent-blue">
                             <RiContactsFill size={20} />
                         </a>
                     </div>
@@ -71,7 +71,7 @@ export default function Home() {
                         </div>
                         <div className="flex gap-10 mt-4">
                             <Link href="/resume">
-                                <button className="button" role="button">
+                                <button className="button button-res" role="button">
                                     RESUME
                                 </button>
                             </Link>

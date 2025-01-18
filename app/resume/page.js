@@ -3,7 +3,7 @@
 import Link from "next/link";
 import ResumeBox from "./ResumeBox";
 import EducationBox from "./EducationBox";
-import VisitTracker from "../_component/VisitTracker";
+import DarkMode from "./../_component/DarkMode";
 
 export default function Resume() {
     const experiences = [
@@ -71,12 +71,14 @@ export default function Resume() {
         },
     ];
     return (
-        <div className="w-full bg-beige min-h-screen">
+        <div className="w-full min-h-screen bg-accent-beige text-foreground dark:bg-accent-charcoal dark:text-foreground-dark relative">
             <div className="max-w-[800px] mx-auto">
                 <div className="">
-                    <VisitTracker />
+                    <div className="absolute left-0 top-0  flex items-center sm:justify-start p-3">
+                        <span className="text-lg p-2 hidden sm:inline">Dark Mode </span> <DarkMode />
+                    </div>
                     <div className="flex items-center justify-center pt-12 pb-10 text-xxl font-bold ">
-                        <div className="w-5 h-5 bg-[blue] mr-3"></div>Resume
+                        <div className="w-5 h-5 bg-accent-blue dark:bg-accent-darkwhite mr-3"></div>Resume
                     </div>
                     <div className="flex items-center justify-between px-2 p-8 text-xl font-bold">
                         <div className="flex-1">Work Experience</div>
@@ -100,12 +102,12 @@ export default function Resume() {
 
                     <div className="p-5"></div>
 
-                    <div className="flex bg-white justify-between px-10 py-5 text-plus">
+                    <div className="flex bg-white text-foreground justify-between px-10 py-5 text-plus">
                         <div>
                             <div className="text-xl font-bold py-3">Technical Skills</div>
                             {technicalSkills.map((skill, index) => (
                                 <div key={index} className="flex items-center p-2">
-                                    <div className="w-2 h-2 bg-[blue] mr-3 flex-shrink-0"></div>
+                                    <div className="w-2 h-2 bg-accent-blue mr-3 flex-shrink-0"></div>
                                     <div className="text-base">
                                         {skill.category}: {skill.details}
                                     </div>

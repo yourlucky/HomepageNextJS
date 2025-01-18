@@ -1,6 +1,8 @@
+"use client";
+
 import ProjectBox from "./ProjectBox";
 import ProjectUBox from "./ProjectUBox";
-
+import DarkMode from "./../../_component/DarkMode";
 import Link from "next/link";
 
 export default function AiProject() {
@@ -91,20 +93,26 @@ export default function AiProject() {
     ];
 
     return (
-        <div className="flex bg-beige">
+        <div className="flex bg-accent-beige text-foreground dark:bg-accent-charcoal dark:text-foreground-dark">
             {/* 좌측 버튼 */}
-            <div className="hidden sm:flex flex-col w-1/4 bg-beige pt-12 gap-4 items-center">
-                <Link href="/projects/manager">
-                    <button className="round" role="button">
-                        &lt;
-                    </button>
-                </Link>
+            <div className="hidden sm:flex flex-col w-1/4 items-center relative">
+                <div className="flex items-center p-2 absolute left-0 top-0">
+                    <span className="text-lg pr-2">Dark Mode </span> <DarkMode />
+                </div>
+                <div className="hidden sm:flex flex-col w-1/4 items-center pt-20 gap-4">
+                    <Link href="/projects/manager">
+                        <button className="round" role="button">
+                            &lt;
+                        </button>
+                    </Link>
+                </div>
             </div>
 
             {/* 가운데 콘텐츠 */}
             <div className="w-full max-w-[800px] mx-auto">
                 <div className="flex items-center justify-center font-bold text-xxl pt-12 pb-10">
-                    <div className="font-xxl w-5 h-5 bg-[blue] mr-3"></div>Implementing with AI
+                    <div className="font-xxl w-5 h-5 bg-accent-blue dark:bg-accent-darkwhite mr-3"></div>Implementing
+                    with AI
                 </div>
                 <div className="font-plus text-center p-4 pb-10">
                     I have a strong passion for learning and implementing new things. My interest in AI, which began

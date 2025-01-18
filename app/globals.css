@@ -2,14 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 전역 스타일 */
+:root {
+    --background-light: #f9f9f9;
+    --background-dark: #121212;
+    --foreground-light: #000000;
+    --foreground-dark: #ffffff;
+    --accent-blue: #003fcc;
+    --accent-darkblue: "#B0B3B8";
+    --accent-darkwhite: "#3e3e42";
+}
+
 body {
     margin: 0;
     font-family: "Inter", sans-serif; /* 전역 폰트 */
     font-size: 17px; /* 기본 폰트 크기 */
     font-weight: 400;
-    background-color: #f9f9f9; /* 배경색 */
+    background-color: var(--background-light); /* 기본 배경색 */
+    color: var(--foreground-light); /* 기본 글자색 */
+    transition:
+        background-color 0.3s,
+        color 0.3s; /* 부드러운 전환 */
 }
+
+/* 다크 모드 */
+.dark body {
+    background-color: var(--background-dark);
+    color: var(--foreground-dark);
+}
+
 .button {
     font-size: 14px;
     padding: 5px 5px;
@@ -18,8 +38,13 @@ body {
     color: white;
     user-select: none;
     cursor: pointer;
-    background: #0050ff;
+    background: var(--accent-blue);
     width: 120px;
+}
+
+.dark .button-res {
+    background: #b0b3b8;
+    color: black;
 }
 
 .button-prj {
@@ -37,6 +62,12 @@ body {
     background: #ae633f;
 }
 
+.dark .button-rs-pdf {
+    color: black;
+    background: white;
+    border: 2px solid black;
+}
+
 button.round {
     background-color: #be5b47;
     color: white;
@@ -51,6 +82,9 @@ button.round {
 }
 button.round:hover {
     background-color: #c26754;
+}
+.dark button.round {
+    background-color: #3e3e42;
 }
 
 button.round:active {

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 const ResumeBox = ({period, position, company, location, logoSrc, description}) => (
-    <div className="flex bg-white justify-between mx-auto px-5 py-2.5 text-plus">
+    <div className="flex bg-white justify-between mx-auto px-5 py-2.5 text-plus text-foreground">
         <span className="flex-col px-7 py-5 justify-between">
             <div>
                 <div className="text-lg font-bold pb-3" style={{color: "rgb(0, 0, 255)"}}>

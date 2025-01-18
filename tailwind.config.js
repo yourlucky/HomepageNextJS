@@ -11,11 +11,24 @@ module.exports = {
         sans: ['var(--font-inter)', ...fontFamily.sans], // Inter를 기본 sans-serif로 설정
       },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        beige: '#e6dace',
-        brightbeige: '#F4ECE6',
-      },
+        background: {
+          DEFAULT: "var(--background-light)", // 기본 배경 (라이트 모드)
+          dark: "var(--background-dark)", // 다크 모드 배경
+        },
+        foreground: {
+          DEFAULT: "var(--foreground-light)", // 기본 글자색 (라이트 모드)
+          dark: "var(--foreground-dark)", // 다크 모드 글자색
+        },
+        accent: {
+          beige: '#e6dace',
+          brightbeige: '#F4ECE6',
+          blue: "#0050ff",
+          gray: "#808588",
+          charcoal: "#222021",
+          lightgray:"#3e3e42",
+          darkblue:"#B0B3B8",
+          darkwhite:"#EDEADE",
+      }
     },
     fontSize: {
       ssm:['10px','15px'],
@@ -42,4 +55,5 @@ module.exports = {
     },
   },
   plugins: [],
+  }
 };

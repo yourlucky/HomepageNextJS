@@ -1,5 +1,8 @@
-import ProjectBox from "../manager/ProjectBox";
+"use client";
+
+import ProjectBox from "./ProjectBox";
 import Link from "next/link";
+import DarkMode from "./../../_component/DarkMode";
 
 export default function Fullstack() {
     const websites = [
@@ -62,20 +65,26 @@ export default function Fullstack() {
     ];
 
     return (
-        <div className="flex bg-beige">
+        <div className="flex bg-accent-beige text-foreground dark:bg-accent-charcoal dark:text-foreground-dark">
             {/* 좌측 버튼 */}
-            <div className="hidden sm:flex flex-col w-1/4 bg-beige pt-12 gap-4 items-center">
-                <Link href="/projects/ai">
-                    <button className="round" role="button">
-                        &lt;
-                    </button>
-                </Link>
+            <div className="hidden sm:flex flex-col w-1/4 items-center relative">
+                <div className="flex items-center p-2 absolute left-0 top-0">
+                    <span className="text-lg pr-2">Dark Mode </span> <DarkMode />
+                </div>
+                <div className="hidden sm:flex flex-col w-1/4 items-center pt-20 gap-4">
+                    <Link href="/projects/ai">
+                        <button className="round" role="button">
+                            &lt;
+                        </button>
+                    </Link>
+                </div>
             </div>
 
             {/* 가운데 콘텐츠 */}
             <div className="w-full max-w-[800px] mx-auto">
                 <div className="flex items-center justify-center font-bold text-xxl pt-12 pb-10">
-                    <div className="font-xxl w-5 h-5 bg-[blue] mr-3"></div>Professional Projects
+                    <div className="font-xxl w-5 h-5 bg-accent-blue dark:bg-accent-darkwhite mr-3"></div>Professional
+                    Projects
                 </div>
                 <p className="font-plus text-center p-4 pb-10">
                     At the outset of my career, much of which I spent as a Product Manager, I had the privilege of
@@ -94,7 +103,7 @@ export default function Fullstack() {
             </div>
 
             {/* 우측 버튼 */}
-            <div className="hidden sm:flex flex-col w-1/4 bg-beige pt-12 gap-4 items-center">
+            <div className="hidden sm:flex flex-col w-1/4 pt-20 gap-4 items-center">
                 <Link href="/projects/manager">
                     <button className="round" role="button">
                         &gt;
