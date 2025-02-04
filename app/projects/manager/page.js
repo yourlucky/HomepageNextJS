@@ -169,7 +169,7 @@ export default function Manger() {
             </div>
 
             {/* 우측 버튼 */}
-            <div className="hidden sm:flex flex-col w-1/4 bg-beige pt-12 gap-4 items-center">
+            <div className="hidden sm:flex flex-col w-1/4 pt-20 gap-4 items-center">
                 <Link href="/projects/ai">
                     <button className="round" role="button">
                         &gt;
