@@ -25,22 +25,22 @@ export default function ProjectsDropdown() {
                 PROJECTS
             </button>
             {isDropdownOpen && (
-                <div className="absolute top-8 left-0 bg-white text-foreground shadow-lg border rounded-md w-48 z-50">
+                <div className="absolute top-8 left-0 bg-white sm:text-sm shadow-lg border rounded-md w-48 z-50">
                     <Link
                         href="/projects/ai"
-                        className="block px-4 py-2 hover:text-accent-blue dark:hover:text-accent-darkblue"
+                        className="block pl-2 py-2 hover:text-accent-blue dark:hover:text-accent-darkblue"
                     >
                         AI
                     </Link>
                     <Link
                         href="/projects/full"
-                        className="block px-4 py-2 hover:text-accent-blue dark:hover:text-accent-darkblue"
+                        className="block pl-2 py-2 hover:text-accent-blue dark:hover:text-accent-darkblue"
                     >
                         Full Stack
                     </Link>
                     <Link
                         href="/projects/manager"
-                        className="block px-4 py-2 hover:text-accent-blue dark:hover:text-accent-darkblue"
+                        className="block pl-2 py-2 hover:text-accent-blue dark:hover:text-accent-darkblue sm:whitespace-nowrap whitespace-normal break-words max-w-[80px]"
                     >
                         Project Manager
                     </Link>

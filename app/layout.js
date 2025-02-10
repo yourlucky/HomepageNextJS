@@ -54,14 +54,14 @@ export default function RootLayout({children}) {
                             Today's choices create tomorrow's stories.
                         </div>
 
-                        <div className="flex gap-3 xs:gap-4 sm:gap-8 lg:gap-10 text-sm">
+                        <div className="flex gap-5 xs:gap-4 sm:gap-8 lg:gap-10 text-sm">
                             <div className="flex flex-col items-center">
                                 <div className="font-bold">Call</div>
                                 <div className="mt-1">608-770-3823</div>
                             </div>
                             <div className="flex flex-col items-center">
                                 <div className="font-bold">Write</div>
-                                <div className="mt-1">yoonchae.na@gmail.com</div>
+                                <div className="mt-1 text-smm sm:text-sm">yoonchae.na@gmail.com</div>
                             </div>
                             <div className="flex flex-col items-center">
                                 <div className="font-bold">Follow</div>

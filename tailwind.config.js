@@ -32,6 +32,7 @@ module.exports = {
     },
     fontSize: {
       ssm:['10px','15px'],
+      smm : ['12px','17px'],
       sm: ['14px', '20px'],
       base: ['16px', '24px'],
       plus:['17px','26px'],

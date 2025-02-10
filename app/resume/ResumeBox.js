@@ -17,12 +17,12 @@ const ResumeBox = ({period, position, company, location, logoSrc, description}) 
                     src={logoSrc}
                     alt="company logo"
                     width={100}
-                    height={50}
+                    height={100}
                     style={{width: "auto", height: "auto"}}
                 />
             </div>
         </span>
-        <span className="text-lg px-7 pt-12 pb-5 max-w-[60%]">{description}</span>
+        <span className="text-sm sm:text-lg px-7 pt-12 pb-5 max-w-[60%]">{description}</span>
     </div>
 );
 

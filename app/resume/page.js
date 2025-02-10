@@ -75,17 +75,19 @@ export default function Resume() {
             <div className="max-w-[800px] mx-auto">
                 <div className="">
                     <div className="absolute left-0 top-0  flex items-center sm:justify-start p-3">
-                        <span className="text-lg p-2 hidden sm:inline">Dark Mode </span> <DarkMode />
+                        <span className="text-lg p-2 hidden sm:inline">Dark Mode </span>
+                        <div className="hidden sm:flex">
+                            <DarkMode />
+                        </div>
                     </div>
                     <div className="flex items-center justify-center pt-12 pb-10 text-xxl font-bold ">
                         <div className="w-5 h-5 bg-accent-blue dark:bg-accent-darkwhite mr-3"></div>Resume
                     </div>
-                    <div className="flex items-center justify-between px-2 p-8 text-xl font-bold">
+                    <div className="flex items-center justify-between px-2 p-8 xs:text-lg text-plus font-bold">
                         <div className="flex-1">Work Experience</div>
                         <div className="flex gap-3">
                             <Link href="/projects/ai">
                                 <button className="button button-rs" role="button">
-                                    {" "}
                                     View Projects
                                 </button>
                             </Link>
