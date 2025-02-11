@@ -41,11 +41,11 @@ export default function Contact() {
         }
     };
 
-    const inputClassName = "text-base p-2 border border-[#1f1c1c] bg-[#e8f0fe]";
+    const inputClassName = "text-base p-2 border border-[#1f1c1c] bg-[#e8f0fe] w-full";
 
     return (
-        <div className="p-20">
-            <div className="w-[50%] p-20 shadow-custom-dark flex flex-col text-plus bg-white">
+        <div className="p-6 sm:p-20">
+            <div className="w-full sm:w-[50%] p-6 sm:p-20 shadow-custom-dark flex flex-col text-plus bg-white">
                 <h1 className="text-center font-semibold text-lg">Get in touch</h1>
                 <div className="flex flex-col my-2">
                     <label htmlFor="frm-email" className="mb-2">
@@ -60,7 +60,7 @@ export default function Contact() {
                         className={inputClassName}
                     />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col my-2">
                     <label htmlFor="frm-phone" className="mb-2">
                         Phone
                     </label>
