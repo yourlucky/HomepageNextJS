@@ -31,7 +31,7 @@ export default function Contact() {
 
             if (response.ok) {
                 alert("success!");
-                window.location.href = "/contactList";
+                window.location.href = "/";
             } else {
                 const errorData = await response.json();
                 console.error("Error:", errorData.error);
