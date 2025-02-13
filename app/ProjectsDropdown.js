@@ -25,7 +25,7 @@ export default function ProjectsDropdown() {
                 PROJECTS
             </button>
             {isDropdownOpen && (
-                <div className="absolute top-8 left-0 bg-white sm:text-sm shadow-lg border rounded-md w-48 z-50">
+                <div className="absolute top-8 left-0 bg-white text-foreground sm:text-sm shadow-lg border rounded-md w-48 z-50">
                     <Link
                         href="/projects/ai"
                         className="block pl-2 py-2 hover:text-accent-blue dark:hover:text-accent-darkblue"
