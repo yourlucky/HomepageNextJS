@@ -8,40 +8,38 @@ import DarkMode from "./../_component/DarkMode";
 export default function Resume() {
     const experiences = [
         {
-            period: "2023 - Present",
+            period: "2024 - Present",
+            position: "Software Engineer",
+            company: "Aptamigo",
+            location: "Chicago, IL",
+            logoSrc: "/Aptamigo.jpg",
+            description: `Architected an autonomous AI-powered SMS engagement system using TypeScript and LangGraph to enable real-time, after-hours lead follow-ups. Developed conversational AI agents that infer renter preferences and automate tour scheduling through structured JSON data integration. Successfully generated 15+ additional daily leads, significantly boosting sales agent productivity.`,
+        },
+        {
+            period: "2023 - 2024",
             position: "Software Engineer",
             company: "SK Ecoplant Americas",
             location: "Irvine, CA",
             logoSrc: "/SK_logo.png",
-            description: `As a Software Engineer at Sk Ecoplant, I have developed a variety of
-            projects including a comprehensive Invoice Portal and a conference
-            room booking system. My responsibilities ranged from designing and
-            implementing the entire process for the Invoice Portal—from
-            front-end to back-end and AWS deployment—to ensuring its seamless
-            functionality.`,
+            description: `Engineered a Django-based automated invoice portal, achieving $325K in annual cost savings. Managed the full development lifecycle from front-end design to AWS deployment, streamlining complex workflows for 50+ corporate users.`,
         },
         {
-            period: "2021 - 2022",
-            position: "Software Developer",
-            company: "UW-Madison, BuckyBots",
-            location: "Madison, WI",
-            logoSrc: "/Bucky.png",
-            description: `In my role as a founding member of the Buckybots team, 
-      I tackled everything from basic network setups to creating simulations for robot training and programming robots in C++ from scratch. This initiative, part of my master's degree, 
-      led to our third-place victory at the Robocup France League 2022. Working with numerous undergraduates, I also developed my leadership skills, 
-      steering our team through complex technical challenges in a collaborative environment.`,
+            period: "2015 - 2021",
+            position: "Senior Software Engineer / Manager",
+            company: "Hyundai Motors",
+            location: "Seoul, South Korea",
+            logoSrc: "/hyundai_logo.jpeg",
+            description: `Orchestrated the global rollout of high-performance manufacturing IT systems across 10 countries, processing data from 20,000+ machines. Designed a distributed data platform handling 2TB/year, achieving a 98% reduction in database load time (600s to 5s). Implemented statistical process control systems that reduced defects by 30% and saved $2.5M annually.`,
         },
     ];
     const education = [
         {
-            period: "2023 - Present",
-            school: "Stony Brook University",
+            period: "2021 - 2022",
+            school: "University of Wisconsin - Madison",
             major: "MS Computer Science",
             advisor: "Advisor : Prof.Josiah Hanna",
             location: "Madison, WI",
-            description: `In my first year, I solidified my understanding of the fundamentals of computer science, 
-        and in the second year, I focused on reinforcement learning under the guidance of Professor Josiah. 
-        I am always grateful for the wonderful opportunities I have received.`,
+            description: `Focused on Advanced Computer Science fundamentals with a specialization in Reinforcement Learning. Conducted research under Prof. Josiah Hanna, exploring complex algorithmic challenges and autonomous system behaviors.`,
         },
         {
             period: "2012 - 2013",
@@ -49,25 +47,26 @@ export default function Resume() {
             major: "BS Applied Mathematics & Statistics",
             advisor: " ",
             location: "StonyBrook, NY",
-            description: `I was selected for a dual degree program at Ajou University in Korea, 
-      which allowed me to study in the United States. 
-      Applied Mathematics/Statistics, my favorite subjects, led me to graduate with the highest distinction, Summa Cum Laude.`,
+            description: `Graduated Summa Cum Laude with a focus on Applied Mathematics and Statistics. Selected for a prestigious dual-degree program at Ajou University, South Korea, demonstrating strong analytical foundations and academic excellence.`,
         },
     ];
     const technicalSkills = [
         {
             category: "Languages",
-            details: "Python, Java, C/C++, CABSL, JavaScript, R, MATLAB",
+            details: "TypeScript, Python, C++, SQL, R, MATLAB",
+        },
+        {
+            category: "AI/Robotics",
+            details: "Reinforcement Learning(SB3), LangGraph/LangChain, PyTorch, MuJoCo, OpenCV, Sim2Real",
         },
         {
             category: "Frameworks/Libraries",
-            details: "NodeJS, Flask, Django, PyTorch, Stable-baseline, OpenCV, Mujoco, Scikit, Pandas",
+            details: "Node.js, Django, MySQL, MongoDB, AWS, Distributed Systems",
         },
         {category: "Databases", details: "MySQL, MongoDB, VectorDB"},
         {
             category: "Others",
-            details:
-                "Operation Research, Traditional Statistics, Reinforcement Learning, Linux, Raspberry-pi, Arduino, GitHub",
+            details: "Operation Research, Traditional Statistics, Linux, Raspberry-pi, Arduino, GitHub",
         },
     ];
     return (
@@ -91,7 +90,7 @@ export default function Resume() {
                                     View Projects
                                 </button>
                             </Link>
-                            <Link href="https://drive.google.com/file/d/1mSFUG2RgQpP-snvMgJF3AdWCLe6T7-XE/view">
+                            <Link href="https://drive.google.com/file/d/1HSB-N4IFV6-FP0pYuVNi-g14m1ks62Sl/view">
                                 <button className="button button-rs button-rs-pdf">PDF Download</button>
                             </Link>
                         </div>
@@ -111,7 +110,8 @@ export default function Resume() {
                                 <div key={index} className="flex items-center p-2">
                                     <div className="w-2 h-2 bg-accent-blue mr-3 flex-shrink-0"></div>
                                     <div className="text-base">
-                                        {skill.category}: {skill.details}
+                                        <span className="font-semibold tracking-tight">{skill.category}</span>:{" "}
+                                        <span className="font-normal">{skill.details}</span>
                                     </div>
                                 </div>
                             ))}

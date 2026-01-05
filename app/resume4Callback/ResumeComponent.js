@@ -19,7 +19,7 @@ const ResumeComponent = ({experiences = [], education = []}) => (
                             View Projects
                         </button>
                     </Link>
-                    <Link href="https://drive.google.com/file/d/1mSFUG2RgQpP-snvMgJF3AdWCLe6T7-XE/view">
+                    <Link href="https://drive.google.com/file/d/1HSB-N4IFV6-FP0pYuVNi-g14m1ks62Sl/view">
                         <button className="button-rs button-rs-pdf">PDF Download</button>
                     </Link>
                 </div>

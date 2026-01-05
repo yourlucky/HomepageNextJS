@@ -12,17 +12,15 @@ export default function Fullstack() {
             image: "/InvoicePortal1.jpg",
             content: (
                 <>
-                    As a full-stack developer, I led the design and implementation of an Invoice Portal from start to
-                    finish as a solo project. This system facilitates seamless external invoice submissions and manages
-                    internal, role-based approval workflows. By developing and maintaining the front-end with Bootstrap
-                    and JavaScript and the back-end with Django and MySQL, I ensured a smooth and efficient user
-                    experience.
-                    <br />
-                    <br />
-                    The portal features real-time payment monitoring, alerts, and budget aggregation tools, enabling
-                    clear financial oversight. My work on this project resulted in $325K/year in cost savings and
-                    enhanced operational efficiency by saving 0.75 hours daily for 50 users, translating to a
-                    significant improvement in budget control and productivity.
+                    As the sole full-stack developer, I engineered a comprehensive Invoice Portal designed to automate
+                    complex financial workflows. I led the entire development lifecycle, creating a system that
+                    facilitates external invoice submissions while managing internal, role-based approval sequences. By
+                    building a responsive front-end with Bootstrap and a robust back-end using Django and MySQL, I
+                    delivered a seamless end-to-end user experience. <br /> <br /> The platform integrates real-time
+                    payment monitoring, automated alerts, and budget aggregation tools to provide clear financial
+                    oversight. This project generated $325K in annual cost savings and improved operational efficiency
+                    by 0.75 hours daily for over 50 users, directly enhancing corporate budget control and team
+                    productivity.
                 </>
             ),
             addContent: (
@@ -48,10 +46,11 @@ export default function Fullstack() {
             image: "/neo2x.png",
             content: (
                 <>
-                    I built a simple website for a lawyer friend using Wix. The site features basic functionalities like
-                    a blog and email, but I dedicated significant effort to enhancing the UI/UX for improved user
-                    convenience. I also experimented with SEO for the first time to help boost my friend's revenue.
-                    Creating something is always a joy for me.
+                    I developed a professional web presence for a legal firm using the Wix platform, focusing on
+                    creating an intuitive UI/UX for legal clients. The project included integrating essential business
+                    features such as a blog and automated email systems. Additionally, I implemented SEO strategies to
+                    improve organic search visibility and drive client acquisition, demonstrating my ability to deliver
+                    functional, business-oriented web solutions.
                 </>
             ),
             addContent: (
@@ -87,12 +86,10 @@ export default function Fullstack() {
                     Projects
                 </div>
                 <p className="font-plus text-center p-4 pb-10">
-                    At the outset of my career, much of which I spent as a Product Manager, I had the privilege of
-                    navigating the realm of smart factory manufacturing quality. This role taught me invaluable lessons
-                    in coordinating with diverse stakeholders and mastering effective communication and operational
-                    strategies. During this period, I extensively explored hypotheses, developed systems, and gained
-                    firsthand experiences of both successes and failures. These experiences have become invaluable
-                    assets in my life's journey.{" "}
+                    As a hands-on full stack software engineer, I build complete applications by managing the entire
+                    development lifecycle. From designing database schemas and backend logic to crafting intuitive user
+                    interfaces, I bridge the gap between frontend and backend to deliver functional, end-to-end
+                    solutions. Each project reflects my ability to own a product from start to finish.{" "}
                 </p>
 
                 {websites.map((projObj, index) => (

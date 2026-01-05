@@ -8,20 +8,18 @@ import Link from "next/link";
 export default function AiProject() {
     const chatbot = [
         {
-            title: "Private Chatbot",
-            role: "Personal Project",
-            image: "/ChatBot.png",
-            content: `As a developer, I had the opportunity to create a private chatbot application from scratch. 
-      This project involved developing a chatbot that allows users to upload personal documents for Q&A interactions, 
-      so I no longer need to read and study documents manually. 
-      To enhance my personal skills, I also implemented functionality to generate quizzes from JSON-formatted data. 
-      Additionally, I integrated OpenAI's GPT-API for language model interactions and implemented a deployable LLM using Ollama for local machine learning model deployment.`,
+            title: "Erin: Autonomous AI Agent",
+            role: "Software Engineer @ AptAmigo",
+            image: "/Erin.png",
+            content: `Developed 'Erin,' an autonomous AI engagement system designed to handle real-time lead follow-ups. 
+            By architecting a scenario-driven agent workflow, Erin infers renter preferences such as budget, neighborhoods, and move-in dates from SMS interactions. 
+            The system automates complex tasks including personalized tour list generation and scheduling, ensuring seamless engagement outside business hours. 
+            This implementation successfully generated 15+ additional leads per day, significantly contributing to sales conversion and agent retention.`,
             addContent: (
                 <>
-                    <div>Technologies Used</div>
-                    <div>Development: LangChain, Streamlit</div>
-                    <div>API: GPT-API, HuggingFace</div>
-                    <div>Local Deployment: Ollama</div>
+                    <div>Development: LangGraph, TypeScript, Node.js</div>
+                    <div>AI Models: Claude 3.5 Sonnet, GPT-4o </div>
+                    <div>Infrastructure :AWS Lambda (Serverless), MongoDB </div>
                 </>
             ),
         },
@@ -29,7 +27,7 @@ export default function AiProject() {
 
     const soccerbot = [
         {
-            title: "Private Chatbot",
+            title: "Robot Soccer",
             role: "Software Engineer",
             youtubeLink: [
                 "https://www.youtube.com/embed/0Rd1JdVSBTo?rel=0&vq=hd720",
@@ -37,16 +35,17 @@ export default function AiProject() {
             ],
             content: (
                 <>
-                    As a founding member, I contributed from the start of the Nao robot project. Training AI for robots
-                    requires substantial data, and since teaching real robot movements is time-consuming, I used the
-                    Pygame library to create simulation games. These simulations generated the data needed to train the
-                    robots and explore digital twin concepts.
+                    As a founding member of the BuckyBots team, I led the software development for the Nao robot
+                    platform from the ground up. To overcome the data scarcity and time constraints of physical robot
+                    training, I engineered a high-speed simulation environment using PyGame. This Digital Twin approach
+                    enabled data acquisition at 500 samples per second—roughly 2,500 times faster than physical
+                    hardware—accelerating the development of robust reinforcementSim2Realreinforcement learning models.
                     <br />
                     <br />
-                    For perception tasks like recognizing balls, fields, and other robots, I used the OpenCV library.
-                    For planning, I applied reinforcement learning algorithms from the Stable-Baselines library to
-                    optimize robot behavior. For robot control, I used the codebase of B-Human, the 2020 RoboCup
-                    champions, to ensure effective movement execution.
+                    My technical contributions spanned the entire robotics stack: utilizing OpenCV for real-time
+                    perception of balls and field markers, implementing table-Baselines3 for behavioral planning, and
+                    optimizing robot gait and control in C++based on the B-Human framework. These efforts culminated in
+                    securing 3rd place in the Standard Platform League at RoboCup 2023 in France.
                 </>
             ),
             addContent: (
@@ -77,9 +76,12 @@ export default function AiProject() {
             youtubeLink: ["https://www.youtube.com/embed/_6qmTGQIzXA"],
             content: (
                 <>
-                    As a hobby, I engage in Raspberry projects. I recently purchased an BME280 chip, soldered it, and
-                    developed a simple web system that processes data in the cloud. This setup allows me to manage my
-                    schedule and monitor the temperature and humidity in my room.
+                    Explored the integration of hardware and cloud software through a custom IoT monitoring system. I
+                    performed precision soldering and hardware integration for the BME280 sensor via I²C communication
+                    on a Raspberry Pi. The system features a Python Flask backend that processes environmental data in
+                    the cloud, providing a real-time web dashboard for monitoring room temperature and humidity
+                    alongside personal schedule management. This project demonstrates my ability to bridge the gap
+                    between physical sensors and web-based data visualization.
                 </>
             ),
             addContent: (
@@ -115,11 +117,13 @@ export default function AiProject() {
                     with AI
                 </div>
                 <div className="font-plus text-center p-4 pb-10">
-                    I have a strong passion for learning and implementing new things. My interest in AI, which began
-                    with robot soccer, naturally extended to IoT sensor processing and machine learning models.
-                    Recently, I have been focusing on LLMs using LangChain, working on personal projects in this area.
-                    As new technologies continue to emerge, I am particularly interested in leveraging these
-                    advancements to create innovative business solutions.
+                    Driven by a deep passion for exploring and implementing emerging technologies, my journey into AI
+                    began with the complex challenges of autonomous robot soccer. This foundation naturally evolved into
+                    a broader expertise in IoT sensor integration and advanced machine learning architectures.
+                    Currently, I am specializing in building sophisticated Agentic workflows using LLMs and LangGraph,
+                    transforming cutting-edge research into functional, business-oriented solutions. I remain dedicated
+                    to leveraging the rapid advancements in AI to solve intricate problems and deliver innovative
+                    digital experiences.{" "}
                 </div>
 
                 {chatbot.map((projObj, index) => (

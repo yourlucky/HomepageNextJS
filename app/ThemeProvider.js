@@ -1,19 +1,23 @@
 "use client";
 
-import React from "react";
 import {RecoilRoot, useRecoilValue} from "recoil";
 import {darkState} from "./state/atoms";
+import {useEffect} from "react";
 
-function BodyWithTheme({children}) {
+function ThemeEffect({children}) {
     const dark = useRecoilValue(darkState);
 
-    return <body className={`${dark ? "dark" : ""}`}>{children}</body>;
+    useEffect(() => {
+        document.body.classList.toggle("dark", dark);
+    }, [dark]);
+
+    return children;
 }
 
 export default function ThemeProvider({children}) {
     return (
         <RecoilRoot>
-            <BodyWithTheme>{children}</BodyWithTheme>
+            <ThemeEffect>{children}</ThemeEffect>
         </RecoilRoot>
     );
 }

@@ -70,7 +70,7 @@ export default function Home() {
                             Hey <br /> There!
                         </div>
                         <div className="flex gap-10 mt-4">
-                            <Link href="/resume">
+                            <Link href="https://drive.google.com/file/d/1HSB-N4IFV6-FP0pYuVNi-g14m1ks62Sl/view">
                                 <button className="button button-res" role="button">
                                     RESUME
                                 </button>
@@ -86,19 +86,28 @@ export default function Home() {
                         <div className="text-xl font-bold">From Ideas to Implementation</div>
                         <div className="text-lg">: My Engineering Journey</div>
                         <p>
-                            I’m a full-stack engineer based in California. My journey in technology began at Hyundai,
-                            where I spent three years as an IT manager and another three as an engineer, mastering the
-                            management of complex projects and the intricacies of software development. After earning a
-                            master's degree, I competed in a Robocup competition, securing third place and further
-                            honing my problem-solving skills. Today, I work as a software engineer in Irvine.
+                            Based in California, I am a <strong>software engineer</strong> specializing in the
+                            intersection of autonomous AI systems and robust enterprise infrastructure. My foundation
+                            was built during a six-year tenure at Hyundai Motors, where I evolved from
+                            <strong> strategic IT management</strong> into{" "}
+                            <strong>hands-on software engineering</strong>, designing and operating large-scale
+                            distributed systems.
                         </p>
+
                         <p>
-                            I excel in turning insights into effective software solutions, whether developing robust
-                            systems or innovating new ones. Explore my portfolio to discover projects like the Invoice
-                            Portal, Robot Soccer, the neo2x website, an IoT panel, and a private chatbot web. Recently,
-                            I have been focusing on leveraging LLMs to drive business innovation. Each project
-                            highlights my dual expertise in technical innovation and strategic project management. Let’s
-                            collaborate to create something impactful!
+                            After earning a <strong>Master's degree in Computer Science</strong> from UW-Madison, I led
+                            a robotics team to a <strong>3rd-place</strong> finish at<strong> the RoboCup </strong>{" "}
+                            Standard Platform League, developing real-time{" "}
+                            <strong>perception and planning systems in C++</strong>. Today, I focus on building{" "}
+                            <strong>autonomous AI agents</strong> using <strong>LLMs and multi-agent workflows</strong>{" "}
+                            (LangGraph) to solve complex business problems.
+                        </p>
+
+                        <p>
+                            From <strong>distributed manufacturing systems</strong> processing 2TB of data per year to{" "}
+                            <strong>AI-driven conversational agents</strong>, I turn technical challenges into scalable,
+                            impactful software. Explore my portfolio to see how mechanical intuitionand modern software
+                            engineering come together to build the future.
                         </p>
                     </div>
                 </div>
