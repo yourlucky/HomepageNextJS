@@ -6,6 +6,7 @@ import {FaLinkedin, FaGithub} from "react-icons/fa";
 import {RiContactsFill} from "react-icons/ri";
 import Image from "next/image";
 import DarkMode from "./_component/DarkMode";
+import {RESUME_URL} from "./resume/page";
 
 export default function Home() {
     return (
@@ -34,7 +35,7 @@ export default function Home() {
                                 sizes="(max-width: 640px) 100vw, 300px"
                             />
                         </div>
-                        <div className="text-xxl font-bold pt-5 pb-3">Yoon Na</div>
+                        <div className="text-xxl font-bold pt-5 pb-3">Leo Na</div>
                         <div className="w-12 h-0.5 bg-accent-blue dark:bg-white"></div>
                         <div className="text-plus font-light py-8">FULL-STACK ENGINEER</div>
                     </div>
@@ -70,7 +71,7 @@ export default function Home() {
                             Hey <br /> There!
                         </div>
                         <div className="flex gap-10 mt-4">
-                            <Link href="https://drive.google.com/file/d/1HSB-N4IFV6-FP0pYuVNi-g14m1ks62Sl/view">
+                            <Link href={RESUME_URL}>
                                 <button className="button button-res" role="button">
                                     RESUME
                                 </button>
@@ -83,31 +84,33 @@ export default function Home() {
 
                     {/* 나머지 글씨 */}
                     <div className="flex flex-col gap-4">
-                        <div className="text-xl font-bold">From Ideas to Implementation</div>
-                        <div className="text-lg">: My Engineering Journey</div>
+                        <div className="text-xl font-bold">From Ideas to Impact</div>
+                        <div className="text-lg">:Learning, Building, and Shipping Real Systems</div>
                         <p>
                             Based in California, I am a <strong>software engineer</strong> specializing in the
                             intersection of autonomous AI systems and robust enterprise infrastructure. My foundation
-                            was built during a six-year tenure at Hyundai Motors, where I evolved from
-                            <strong> strategic IT management</strong> into{" "}
-                            <strong>hands-on software engineering</strong>, designing and operating large-scale
-                            distributed systems.
+                            was built during a six-year tenure at Hyundai Motor Company, where I{" "}
+                            <strong>led and shipped production software</strong> at HQ while aligning complex
+                            stakeholder needs across <strong>manufacturing equipment</strong>,{" "}
+                            <strong>factory operations</strong>, and <strong>software engineering</strong>, designing
+                            and operating large-scale distributed systems.
                         </p>
 
                         <p>
-                            After earning a <strong>Master's degree in Computer Science</strong> from UW-Madison, I led
-                            a robotics team to a <strong>3rd-place</strong> finish at<strong> the RoboCup </strong>{" "}
+                            After earning a <strong>Master's degree in Computer Science</strong> from UW–Madison, I led
+                            a robotics team to a <strong>3rd-place</strong> finish at the <strong>RoboCup</strong>{" "}
                             Standard Platform League, developing real-time{" "}
-                            <strong>perception and planning systems in C++</strong>. Today, I focus on building{" "}
+                            <strong>perception and planning systems in C++</strong>. Today, I build production-grade{" "}
                             <strong>autonomous AI agents</strong> using <strong>LLMs and multi-agent workflows</strong>{" "}
-                            (LangGraph) to solve complex business problems.
+                            (LangGraph) to automate real estate lead qualification, follow-ups, and agent workflows.
                         </p>
 
                         <p>
-                            From <strong>distributed manufacturing systems</strong> processing 2TB of data per year to{" "}
-                            <strong>AI-driven conversational agents</strong>, I turn technical challenges into scalable,
-                            impactful software. Explore my portfolio to see how mechanical intuitionand modern software
-                            engineering come together to build the future.
+                            From <strong>distributed manufacturing platforms</strong> processing terabytes of data
+                            annually to <strong>AI agent systems</strong> deployed in real-world environments, I{" "}
+                            <strong>design, build, and ship scalable systems</strong> that deliver measurable business
+                            impact. Explore my portfolio to see how systems thinking and modern software engineering
+                            come together in practice.
                         </p>
                     </div>
                 </div>

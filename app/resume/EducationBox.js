@@ -13,7 +13,7 @@ const EducationBox = ({period, school, major, advisor, location, description}) =
                 <div className="text-sm pb-1">{location}</div>
             </div>
         </span>
-        <span className="text-sm sm:text-lg px-7 pt-12 pb-5 max-w-[60%] break-words overflow-hidden">
+        <span className="text-sm sm:text-base px-7 pt-12 pb-5 max-w-[60%] break-words overflow-hidden">
             {description}
         </span>
     </div>

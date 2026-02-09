@@ -5,6 +5,8 @@ import ResumeBox from "./ResumeBox";
 import EducationBox from "./EducationBox";
 import DarkMode from "./../_component/DarkMode";
 
+export const RESUME_URL = "https://drive.google.com/file/d/1zpx7dTi8qLrxw55ObP3ekJLP6D_BmA-P";
+
 export default function Resume() {
     const experiences = [
         {
@@ -13,15 +15,22 @@ export default function Resume() {
             company: "Aptamigo",
             location: "Chicago, IL",
             logoSrc: "/Aptamigo.jpg",
-            description: `Architected an autonomous AI-powered SMS engagement system using TypeScript and LangGraph to enable real-time, after-hours lead follow-ups. Developed conversational AI agents that infer renter preferences and automate tour scheduling through structured JSON data integration. Successfully generated 15+ additional daily leads, significantly boosting sales agent productivity.`,
+            description: [
+                "• Revenue Growth via 24/7 AI Engagement: Built an after-hours AI engagement system increasing daily closed deals by 30%+.",
+                "• Data Ingestion Automation: Built crawling pipelines ingesting 30,000+ listings daily.",
+                "• Workflow Automation & Retention: Reduced manual workload and top-agent churn by 65%.",
+            ],
         },
         {
             period: "2023 - 2024",
-            position: "Software Engineer",
+            position: "Tech Lead",
             company: "SK Ecoplant Americas",
             location: "Irvine, CA",
             logoSrc: "/SK_logo.png",
-            description: `Engineered a Django-based automated invoice portal, achieving $325K in annual cost savings. Managed the full development lifecycle from front-end design to AWS deployment, streamlining complex workflows for 50+ corporate users.`,
+            description: [
+                "• Sole IT Lead & System Ownership: Led end-to-end design, development, and operation of core internal systems for the U.S. subsidiary.",
+                "• Invoice Automation Platform: Built and deployed a full AR/AP automation system, offsetting two planned hires and saving ~$320K annually.",
+            ],
         },
         {
             period: "2015 - 2021",
@@ -29,7 +38,12 @@ export default function Resume() {
             company: "Hyundai Motors",
             location: "Seoul, South Korea",
             logoSrc: "/hyundai_logo.jpeg",
-            description: `Orchestrated the global rollout of high-performance manufacturing IT systems across 10 countries, processing data from 20,000+ machines. Designed a distributed data platform handling 2TB/year, achieving a 98% reduction in database load time (600s to 5s). Implemented statistical process control systems that reduced defects by 30% and saved $2.5M annually.`,
+            description: [
+                "• Distributed Quality Systems: Built high-throughput quality management platforms for global manufacturing.",
+                "• DB Architecture Optimization: Reduced DB load time by 98% (600s → 5s) by minimizing write I/O (Tibero Zeta).",
+                "• Global SPC Rollout: Standardized SPC across 20,000+ machines in 10 countries, cutting defects by 30%.",
+                "• Smart Factory Innovation: Delivered mobile inspection, lot traceability, and IoT-based factory tools.",
+            ],
         },
     ];
     const education = [
@@ -90,7 +104,7 @@ export default function Resume() {
                                     View Projects
                                 </button>
                             </Link>
-                            <Link href="https://drive.google.com/file/d/1HSB-N4IFV6-FP0pYuVNi-g14m1ks62Sl/view">
+                            <Link href={RESUME_URL}>
                                 <button className="button button-rs button-rs-pdf">PDF Download</button>
                             </Link>
                         </div>

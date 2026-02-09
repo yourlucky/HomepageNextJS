@@ -3,6 +3,7 @@ import "./resume.css";
 import Link from "next/link";
 import ResumeBox from "./ResumeBox";
 import EducationBox from "./EducationBox";
+import {RESUME_URL} from "../resume/page";
 
 const ResumeComponent = ({experiences = [], education = []}) => (
     <div className="w-full max-w-[800px] mx-auto">
@@ -19,7 +20,7 @@ const ResumeComponent = ({experiences = [], education = []}) => (
                             View Projects
                         </button>
                     </Link>
-                    <Link href="https://drive.google.com/file/d/1HSB-N4IFV6-FP0pYuVNi-g14m1ks62Sl/view">
+                    <Link href={RESUME_URL}>
                         <button className="button-rs button-rs-pdf">PDF Download</button>
                     </Link>
                 </div>

@@ -22,7 +22,13 @@ const ResumeBox = ({period, position, company, location, logoSrc, description}) 
                 />
             </div>
         </span>
-        <span className="text-sm sm:text-lg px-7 pt-12 pb-5 max-w-[60%]">{description}</span>
+        <span className="text-sm sm:text-base px-4 pt-12 pb-5 max-w-[70%]">
+            <ul className="space-y-2">
+                {description.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                ))}
+            </ul>
+        </span>
     </div>
 );
 

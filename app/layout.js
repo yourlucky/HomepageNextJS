@@ -5,16 +5,15 @@ import {Inter} from "next/font/google";
 import ThemeProvider from "./ThemeProvider";
 import ProjectsDropdown from "./ProjectsDropdown";
 
-// Inter 폰트 설정
 const inter = Inter({
     subsets: ["latin"],
-    weight: ["100", "200", "300", "400", "700"], // 필요한 폰트 굵기
+    weight: ["100", "200", "300", "400", "700"],
     variable: "--font-inter",
 });
 
 export const metadata = {
-    title: "Yoon Na",
-    description: "Introducing Yoon Na, somewhere between a passionate hobbyist and a dedicated professional.",
+    title: "Leo Na",
+    description: "Introducing Leo Na, somewhere between a passionate hobbyist and a dedicated professional.",
 };
 
 export default function RootLayout({children}) {
@@ -31,7 +30,7 @@ export default function RootLayout({children}) {
                                     className="inline-flex items-center font-extrabold whitespace-nowrap text-plus sm:text-xl pb-10"
                                 >
                                     <span className="inline-block w-4 h-4 bg-accent-blue dark:bg-accent-darkblue ml-1 mr-2.5 sm:pb-2"></span>
-                                    YoonChae
+                                    Leo
                                 </Link>
                                 <span className="hidden sm:inline sm:whitespace-nowrap pb-2">/ Software Engineer</span>
                             </div>

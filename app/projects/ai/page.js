@@ -11,10 +11,7 @@ export default function AiProject() {
             title: "Erin: Autonomous AI Agent",
             role: "Software Engineer @ AptAmigo",
             image: "/Erin.png",
-            content: `Developed 'Erin,' an autonomous AI engagement system designed to handle real-time lead follow-ups. 
-            By architecting a scenario-driven agent workflow, Erin infers renter preferences such as budget, neighborhoods, and move-in dates from SMS interactions. 
-            The system automates complex tasks including personalized tour list generation and scheduling, ensuring seamless engagement outside business hours. 
-            This implementation successfully generated 15+ additional leads per day, significantly contributing to sales conversion and agent retention.`,
+            content: `Developed “Erin,” a production-grade autonomous AI agent system for real-time, after-hours lead qualification and follow-ups in a real estate platform. Architected scenario-driven, multi-agent workflows that infer renter preferences (budget, neighborhoods, move-in dates) from SMS interactions and normalize structured outputs for downstream systems. Automated complex workflows including personalized tour list generation and scheduling, resulting in 15+ additional qualified leads per day and a measurable increase in sales conversion and agent productivity.`,
             addContent: (
                 <>
                     <div>Development: LangGraph, TypeScript, Node.js</div>
